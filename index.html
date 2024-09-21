@@ -54,7 +54,7 @@
     
                 <div>
                     <div class="profile-icon"></div>
-                    <h4>Profile 1</h4>
+                    <h4>Profile 2</h4>
                 </div>
             </div>
             
@@ -79,15 +79,39 @@
 
             <section>
                 <!-- Form -->
-                <form></form>
+                <form class="form-message-us">
+                    <p>
+                        <label for="nama">Nama:</label>
+                        <input type="text" id="nama" name="nama" placeholder="Nama" />
+                    </p>
+                    <p>
+                        <label for="tanggal">Tanggal Lahir:</label>
+                        <input type="date" id="tanggal" name="tanggal" />
+                    </p>
+                    <p>
+                        <label>Jenis kelamin:</label>
+                        <input type="radio" id="perempuan" name="jenis-kelamin" value="perempuan" />
+                        <label for="perempuan">Perempuan</label>
+                        <input type="radio" id="laki-laki" name="jenis-kelamin" value="laki-laki" />
+                        <label for="laki-laki">Laki-laki</label>
+                    </p>
+                    <p>
+                        <label for="pesan">Pesan:</label>
+                        <textarea name="pesan" id="pesan"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" name="submit" value="Submit" />
+                    </p>
+                </form>
 
 
                 <!-- Result Form -->
-                <div></div>
+                <div class="result-form"></div>
             </section>
         </section>
     </main>
-
+    
+<hr>
     <footer>
         <p>Made By obcdiaN</p>
     </footer>
