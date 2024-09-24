@@ -33,12 +33,6 @@
                         <h3>Semua Kilauan Itu Bukanlah Emas</h3>
                     </div>
             </header>
-
-            <article>
-
-                <!-- Photo Banner -->
-                
-            </article>
         </section>
 
         <hr>
@@ -90,38 +84,37 @@
 
             <section class="message-result">
                 <!-- Form -->
-                <form name="message-input" onsubmit="return validateForm()">
+                <form id="message-input" onsubmit="return validateForm()">
                     <p>
                         <label>Nama:</label>
                         <input type="text" name="name-input" placeholder="Nama" />  
                     </p>
                     <p>
-                        <label>Tanggal Lahir:</label>   
+                        Tanggal Lahir:  
                         <input type="date" name="birthDate" />  
                     </p>
                     <p>
-                        <label>Jenis kelamin:</label>   
+                        Jenis kelamin:  
                         <input type="radio" id="perempuan" name="gender" value="perempuan" />
                         <label for="perempuan">Perempuan</label>
                         <input type="radio" id="laki-laki" name="gender" value="laki-laki" />
                         <label for="laki-laki">Laki-laki</label>    
                     </p>
                     <p>
-                        <label>Pesan:</label></td>
-                        <textarea name="message" rows="10" cols="100"></textarea>   
+                        Pesan:
+                        <textarea name="messages" rows="10" cols="100"></textarea>   
                     </p>
                     <p>
-                        <input type="submit" id="tombol" name="submit" value="Submit" />    
+                        <input type="submit" id="kirim" name="submit" value="Submit">   
                     </p>
                 </form>
-
 
                 <!-- Result Form -->
                 <div class="result-form">
                     <p>Nama: <span id="sender-name-input"></span></p>
                     <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
                     <p>Jenis Kelamin: <span id="sender-gender"></span></p>
-                    <p>Pesan: <span id="sender-message"></span></p>
+                    <p>Pesan: <span id="sender-messages"></span></p>
                 </div>
             </section>
         </section>
@@ -132,7 +125,8 @@
     <footer>
         <p>Made By obcdiaN</p>
     </footer>
+    <script src="js/script.js"></script>
 
-<script src="js\script.js"></script>
+
 </body>
 </html>
