@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\styles.css">
-    <title>Document</title>
+    <title>Website Gue</title>
 </head>
 <body>
 
@@ -29,7 +29,7 @@
             <header>
                 <div class="photo-banner"></div>
                     <div class="banner-text">
-                        <h1>Hi <span id="name"></span>, Welcome to My Website</h1>
+                        <h1>Hi <span id="name">User</span>, Welcome to My Website</h1>
                         <h3>Semua Kilauan Itu Bukanlah Emas</h3>
                     </div>
             </header>
@@ -91,30 +91,28 @@
             <section class="message-result">
                 <!-- Form -->
                 <form name="message-input" onsubmit="return validateForm()">
-                    <table>
-                        <tr>
-                            <td><label>Nama:</label></td>
-                            <td><input type="text" name="name-input" placeholder="Nama" /></td>
-                        </tr>
-                        <tr>
-                            <td><label>Tanggal Lahir:</label></td>
-                            <td><input type="date" name="birthDate" /></td>
-                        </tr>
-                        <tr>
-                            <td><label>Jenis kelamin:</label></td>
-                            <td><input type="radio" id="perempuan" name="gender" value="perempuan" />
-                            <label for="perempuan">Perempuan</label>
-                            <input type="radio" id="laki-laki" name="gender" value="laki-laki" />
-                            <label for="laki-laki">Laki-laki</label></td>
-                        </tr>
-                        <tr>
-                            <td><label>Pesan:</label></td>
-                            <td><textarea name="message" rows="10" cols="100"></textarea></td>
-                        </tr>
-                        <tr>
-                            <td><input type="submit" id="tombol" name="submit" value="Submit" /></td>
-                        </tr>
-                    </table>
+                    <p>
+                        <label>Nama:</label>
+                        <input type="text" name="name-input" placeholder="Nama" />  
+                    </p>
+                    <p>
+                        <label>Tanggal Lahir:</label>   
+                        <input type="date" name="birthDate" />  
+                    </p>
+                    <p>
+                        <label>Jenis kelamin:</label>   
+                        <input type="radio" id="perempuan" name="gender" value="perempuan" />
+                        <label for="perempuan">Perempuan</label>
+                        <input type="radio" id="laki-laki" name="gender" value="laki-laki" />
+                        <label for="laki-laki">Laki-laki</label>    
+                    </p>
+                    <p>
+                        <label>Pesan:</label></td>
+                        <textarea name="message" rows="10" cols="100"></textarea>   
+                    </p>
+                    <p>
+                        <input type="submit" id="tombol" name="submit" value="Submit" />    
+                    </p>
                 </form>
 
 
@@ -129,11 +127,12 @@
         </section>
     </main>
     
-<hr>
+    <hr>
+
     <footer>
         <p>Made By obcdiaN</p>
     </footer>
 
-    <script src="js\script.js"></script>
+<script src="js\script.js"></script>
 </body>
 </html>
