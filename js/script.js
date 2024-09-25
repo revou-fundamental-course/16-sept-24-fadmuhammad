@@ -10,10 +10,9 @@ function validateForm(){
     }
 
     setSenderUI(name, birthDate, gender, messages); 
-    
+
     return false;
 }
-
 
 function setSenderUI(name, birthDate, gender, messages){
     document.getElementById("sender-name-input").innerHTML = name;
@@ -23,10 +22,11 @@ function setSenderUI(name, birthDate, gender, messages){
 }
 
 function replaceName(){
-    let name = "USER";
-    document.getElementById("name").innerHTML = name;
+    var nameInput = prompt("masukkan nama anda", "")
+    document.getElementById("name").innerHTML = nameInput
 }
 
 document.getElementById("kirim").addEventListener("click", function(){
     replaceName();
+    validateForm();
 })
