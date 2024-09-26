@@ -1,3 +1,4 @@
+// Isi Form
 function validateForm(){
     const name = document.forms["message-input"]["full-name"].value;
     const birthDate = document.forms["message-input"]["birthDate"].value;
@@ -30,6 +31,7 @@ function validateForm(){
     return false;
 }
 
+// Menampilkan Form
 function setSenderUI(name, birthDate, gender, messages){
     document.getElementById("sender-full-name").innerHTML = name;
     document.getElementById("sender-birth-date").innerHTML = birthDate;
@@ -42,6 +44,7 @@ document.getElementById("kirim").addEventListener("click", function(){
     validateForm();
 })
 
+// Banner Slide
 function showSlide(index){
     // Get DOM Semua Image
     let listImage = document.getElementsByClassName('photo-banner');
