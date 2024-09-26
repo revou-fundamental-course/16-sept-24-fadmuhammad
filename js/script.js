@@ -41,3 +41,35 @@ function setSenderUI(name, birthDate, gender, messages){
 document.getElementById("kirim").addEventListener("click", function(){
     validateForm();
 })
+
+function showSlide(index){
+    // Get DOM Semua Image
+    let listImage = document.getElementsByClassName('photo-banner');
+    console.log(indexSlide);
+
+    // reset indexSlide
+    if (index > listImage.length) indexSlide = 1
+    
+    // Hide All Image
+    let i = 0;
+    while(i < listImage.length){
+        listImage[i].style.display = "none";
+        i++;
+    }
+    
+    // Show Selected Image
+    listImage[indexSlide - 1].style.display = "block";
+    console.log(listImage);
+}
+
+function nextSlide(n){
+    showSlide(indexSlide += n);
+}
+
+// Autorun Banner
+setInterval(() => {
+    nextSlide(1)
+}, 2000);
+
+let indexSlide = 1;
+showSlide(1);
