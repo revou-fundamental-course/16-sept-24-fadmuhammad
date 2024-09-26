@@ -113,6 +113,14 @@ header{
     border-bottom-right-radius: 10px;
 }
 
+.portofolio-image{
+    background-image: url(../assets/porto.png);
+    background-size: contain;
+    height: 480px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 textarea {
     width: 45%;
     height: 150px;
